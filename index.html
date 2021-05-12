@@ -19,7 +19,65 @@
 
 <hr>
 
-<img src="/images/wide_main_pic2.png" class="center">
+
+<img src="/images/wide_main_pic2.png" class="center" style="padding-top: 10px; padding-bottom: 20px;">
+
+<div class="tab-container">
+<div class="tab">
+    <button class="tablinks" onmouseover="clickHandle(event,'Welcome')">Welcome</button>
+    <button class="tablinks" onmouseover="clickHandle(event,'People')">People</button>
+    <button class="tablinks" onmouseover="clickHandle(event,'Research')">Research</button>
+    <button class="tablinks" onmouseover="clickHandle(event,'Publications')">Publications</button>
+    <button class="tablinks" onmouseover="clickHandle(event,'Teaching')">Teaching</button>
+</div>
+</div>
+
+<div id="Welcome" class="tabcontent" style="display:block">
+    <p>Welcome to the Algar Lab in the Department of Biology at Lakehead University, 
+        on the shores of Lake Superior in the midst of Canada's boreal forest. Note that this
+        is the Algar Lab that does fascinating research on reptiles and amphibians. If you're
+        looking for the other Algar Lab that digs around in stinky mud at the bottom of the ocean, you can find them <a href="https://algarlab.wordpress.com" target="_blank">here</a>.
+    </p>
+</div>
+
+<div id="People" class="tabcontent">
+    <h3>Dr. Adam C. Algar, Associate Professor</h3>
+    <p>I am a human being
+    </p>
+</div>
+
+<div id="Research" class="tabcontent">
+    <p>We do research
+    </p>
+</div>
+
+<div id="Publications" class="tabcontent">
+    <p>We have published some things
+    </p>
+</div>
+
+<div id="Teaching" class="tabcontent">
+    <p>I teach stuff
+    </p>
+</div>
+
+<script>
+    function clickHandle(evt,tabName) {
+        let i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block"
+        evt.currentTarget.className += " active";
+    }
+</script>
 
 </body>
 
