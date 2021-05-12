@@ -1,5 +1,7 @@
 body {
-    background-color: white
+    background-color: white;
+    margin-left:5%;
+    margin-right:5%;
 }
 
 h1  {
@@ -24,8 +26,8 @@ hr {
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
-    margin-left: 10em;
-    margin-right: 10em;
+  /*  margin-left: 10em; */
+  /*  margin-right: 10em; */
     border-style: inset;
     border-width: 1px;
   }
@@ -34,7 +36,8 @@ hr {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 100%;
+
   }
 
   /* Style the tab */
@@ -61,7 +64,7 @@ hr {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 1em;
+    font-size: 0.9em;
   }
   
   /* Change background color of buttons on hover */
@@ -80,4 +83,36 @@ hr {
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align:inherit;
+    
+  }
+
+  /* Three image containers (use 25% for four, and 50% for two, etc) 
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  } */
+  
+  .column {
+    float: left;
+    padding: 10px;
+  }
+  
+  .middle, .right {
+    width: 20%;
+  }
+  
+  .left {
+    width: 50%;
+  }
+
+
+
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
