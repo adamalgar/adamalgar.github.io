@@ -16,9 +16,9 @@ h1  {
 h2  {
     color:black;
     font-family:Arial, Helvetica, sans-serif;
-    font-size:2em;
+    font-size:1.5em;
     text-align:center;
-    margin: 0.1em 0 0 0em;
+  margin: 1em 0 0.9em 0em;
 
 }
 
@@ -31,6 +31,11 @@ hr {
     border-style: inset;
     border-width: 1px;
   }
+
+ img {
+     object-fit:contain
+
+ }
 
   .center {
     display: block;
@@ -62,7 +67,7 @@ hr {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 14px 8px;
     transition: 0.3s;
     font-size: 0.9em;
   }
@@ -83,7 +88,9 @@ hr {
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Futura, Arial, sans-serif;
+    font-size:large;
+    color:darkslategray;
     text-align:inherit;
     
   }
@@ -97,11 +104,12 @@ hr {
   
   .column {
     float: left;
-    padding: 10px;
+    padding: 15px;
   }
   
   .middle, .right {
     width: 20%;
+    padding-top: 40px
   }
   
   .left {
