@@ -22,6 +22,22 @@ h2  {
 
 }
 
+h3 {
+  font-family:Futura, Arial, sans-serif;
+  font-size:1.25em;
+  color:darkslategray;
+  text-align:center;
+  margin: 1em 0 0 0;
+}
+
+h4 {
+  font-family:Futura, Arial, sans-serif;
+  font-size:large;
+  color:darkslategray;
+  text-align:center;
+  margin: 0.25em 0 0 0;
+}
+
 hr { 
     display: block;
     margin-top: 1em;
@@ -116,8 +132,14 @@ hr {
     width: 50%;
   }
 
+  .left2 {
+    width: 65%;
+  }
 
-
+.right2 {
+  width:25%;
+  padding-top: 40px
+}
   /* Clear floats after image containers */
   .row::after {
     content: "";
