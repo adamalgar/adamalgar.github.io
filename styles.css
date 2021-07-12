@@ -166,3 +166,10 @@ hr {
     margin-right: auto;
     width: 70%
 }
+
+
+body2 {
+  font-family:Futura, Arial, sans-serif;
+    font-size:large;
+    color:darkslategray;
+}
